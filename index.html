@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@2.3.2/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5.sound@0.4.1/dist/p5.sound.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <main>
+
+      <div id="displayContainer">
+  
+        
+      </div>
+      <div id="radioContainer">
+        <div class="radios" id="radioStyle">
+          <input
+            type="radio"
+            name="radioStyle"
+            value="bw"
+            id="styleButtonPixel"
+            onchange="checkPixel()"
+            checked
+          />
+          <label for="styleButtonPixel" class="radioLabel"><img src="/assets/pixel.png"></label>
+          
+          <input
+            type="radio"
+            name="radioStyle"
+            value="color"
+            id="styleButtonStripe"
+            onchange="checkStripe()"
+            
+          />
+          <label for="styleButtonStar" class="radioLabel"><img src="/assets/stripe.png"></label>
+          
+          <input
+            type="radio"
+            name="radioStyle"
+            value="color"
+            id="styleButtonStitch"
+            onchange="checkStitch()"
+            
+          />
+          <label for="styleButtonStar" class="radioLabel"><img src="/assets/stitch.png"></label>
+
+          <input
+            type="radio"
+            name="radioStyle"
+            value="color"
+            id="styleButtonChecker"
+            onchange="checkChecker()"
+            
+          />
+          <label for="styleButtonStar" class="radioLabel"><img src="/assets/checker.png"></label>
+
+          <input
+            type="radio"
+            name="radioStyle"
+            value="color"
+            id="styleButtonCheckerInverse"
+            onchange="checkCheckerInverse()"
+           
+          />
+          <label for="styleButtonStar" class="radioLabel"><img src="/assets/checker-inverse.png"></label>
+
+          <input
+            type="radio"
+            name="radioStyle"
+            value="color"
+            id="styleButtonStar"
+            onchange="checkStar()"
+       
+           
+          />
+          <label for="styleButtonStar" class="radioLabel"><img src="/assets/star.png"></label>
+
+          <input
+            type="radio"
+            name="radioStyle"
+            value="color"
+            id="styleButtonStarStroke"
+            onchange="checkStarStroke()"
+           
+          />
+          <label for="styleButtonStar" class="radioLabel"><img src="/assets/star-stroke.png"></label>
+
+          <input
+            type="radio"
+            name="radioStyle"
+            value="color"
+            id="styleButtonWeave"
+            onchange="checkWeave()"
+           
+          />
+          <label for="styleButtonStar" class="radioLabel"><img src="/assets/weave.png"></label>
+
+          <input
+            type="radio"
+            name="radioStyle"
+            value="color"
+            id="styleButtonStitchTriangle"
+            onchange="checkStitchTriangle()"
+         
+          />
+          <label for="styleButtonStar" class="radioLabel"><img src="/assets/stitch-triangle.png"></label>
+
+          <input
+            type="radio"
+            name="radioStyle"
+            value="color"
+            id="styleButtonChain"
+            onchange="checkChain()"
+          
+          />
+          <label for="styleButtonStar" class="radioLabel"><img src="/assets/chain.png"></label>
+          
+        </div>
+        <div class="radios" id="radioColor">
+          <input
+            type="radio"
+            name="radioMode"
+            value="bw"
+            id="modeButtonBW"
+            onchange="checkBW()"
+          />
+          <label for="modeButtonBW" class="radioLabel">b&w</label>
+          
+          <input
+            type="radio"
+            name="radioMode"
+            value="color"
+            id="modeButtonColor"
+            onchange="checkColor()"
+            checked
+          />
+          <label for="modeButtonColor" class="radioLabel">color</label><br />
+        </div>
+      </div>
+    </main>
+    <script src="sketch.js"></script>
+  </body>
+</html>
